@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cookapps"
+version = "0.1.0"
+description = ""
+authors = ["Kungyu Lee <hismayfly@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.75.2"
+requests = "^2.27.1"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+aiomysql = "^0.1.0"
+bcrypt = "^3.2.0"
+pytest-asyncio = "^0.18.3"
+PyJWT = "^2.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
